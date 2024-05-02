@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <title>Image Slider</title>
+    <style>
+       *{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          width: 100%;
+          height: 700px;
+          font-family: 'sans-serif', poppins;
+       }
+       .container{
+          width: 100%;
+          height: 100vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: #0a608b;
+          flex-direction: column; /* Added */
+       }
+       .container.titlec {
+          text-align: center;
+       }
+       .title {
+          font-size: 40px;
+          text-align: center;
+          margin-bottom: -550px;
+          color: #fff; /* Adjust color as needed */
+       }
+       .title span{
+        color: aqua;
+       }
+       .swiper{
+          width:80%;
+          height: fit-content;
+       }
+       .swiper-slide img{
+          width: 100%;
+          height: 550px;
+       }
+       .swiper .swiper-button-prev, .swiper-button-next{
+          color:cyan;
+       }
+       .swiper .swiper-pagination-bullet-active{
+          background: #f66335;
+       }
+    </style>
+</head>
+<body>
+   <div class="container">
+      <div class="title">My <span>Certificates</span></div> <!-- Added title here -->
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" ><img src="Yamala Vani.png"></div>
+          <div class="swiper-slide"><img src="quiz.png"></div>
+          <div class="swiper-slide"><img src="FPGA DESIGN AND VERIFICATION.jpg"></div>
+          <div class="swiper-slide"><img src="dron.jpg"></div>
+         <!-- Add more images here -->
+         </div>
+      <div class="swiper-pagination"></div> 
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+     </div>
+   </div>
+   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+   <script>
+      const swiper = new Swiper('.swiper', {
+         autoplay:{
+            delay:3000,
+            disableOnInteraction: false,
+         },
+         loop: true,
+         pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+         },
+         navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+         },
+      });
+   </script>
+</body>
+</html>

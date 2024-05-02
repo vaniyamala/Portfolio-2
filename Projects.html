@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <style>
+        body{
+            background: #081b29;
+        }
+        .main-text{
+            padding-top: 20px;
+            margin-top: -19px;
+        }
+        .main-text h2{
+            font-size: 60px;
+            line-height: 0.5;
+            text-align: center;
+            color: white;
+        }
+        .main-text h2 span{
+            color: #0ef;
+        }
+        .Portfolio-content{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(359px,auto));
+        }
+        .row{
+            margin-top: 5px;
+            position: relative;
+            overflow:hidden ;
+            border-radius: 8px;
+            cursor:pointer;
+            
+        }
+        .power{
+            height: 75%;
+        }
+        .row img{
+            width: 100%;
+            height: 75%;
+            border-radius: 8px;
+            display: block;
+            transition: transform 0.5s;
+            justify-content:space-evenly;
+            
+        }
+        .layer {
+            width: 100%;
+            height: 75;
+            background: linear-gradient(rgba(0, 0, 0, 0.1), #0ef);
+            position: absolute;
+            border-radius: 20px;
+            left:0px;
+            bottom: 0;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0 40px;
+            transition: height 0.5s;
+        }
+        .layer h5{
+            color: #50cd1b;
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+        .row:hover img{
+            transform:scale(1,1);
+        }
+        .row:hover .layer{
+            height: 100%;
+        }
+        .buttons {
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        .buttons a {
+            display: inline-block;
+            background-color:cyan;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            margin-right: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <div id="Portfolio" >
+            <div class="main-text" id="project">
+                <h2>Latest<span>Projects</span></h2>
+                <div class="Portfolio-content">
+                    <div class="row">
+                        <img src="images.jpeg">
+                        <div class="layer">
+                            <h5>Shop Nest</h5>
+                            <p>Technologies Used: Oracle, Java SE, Java EE(Servlets & JSP’s) 
+                                The aim of an e-commerce website application is to facilitate online 
+                                buying and selling of products or services. 
+                                 It includes features such as product catalog, shopping cart, payment 
+                                gateway integration, order management, user accounts, and customer 
+                                support. The main objectives of an e-commerce website application.</p>
+                                
+                        </div>
+                    </div>
+                    <div class="row">
+                        <img class="power" src="p1.png">
+                        <div class="layer">
+                            <h5>POWER OPTIMIZATION OF SINGLE-PHASE CLOCKED FEEDBACK D FLIP FLOPt</h5>
+                            <p>A method for creating multifunctional binary reversible gates has been provided. 
+                                These gates can be used to implement Boolean functions in regular circuits. Multiple-valued 
+                                reversible gates with comparable features may also be built in the same way. Design of 
+                                reversible logic gates and a D flipflop using fundamental reversible gates like the Feynman 
+                                and Fredkin gates. 
+                                 
+                        </div>
+                    </div>
+                    <div class="row">
+                        <img class="power" src="p2.jpg">
+                        <div class="layer">
+                            <h5>AUTOMATIC SMOKE DETECTOR ALARM </h5>
+                            <p>The Automatic Smoke Detector Alarm is very compact as it doesn’t
+                                employs the costly smoke detecting sensors. It has pair of infrared
+                                sensors which are continuously monitoring the visibility in the
+                                premises where they are attached. In case a fire erupts, smoke gets
+                                generated and spreads in and around the premises. Once this
+                                smoke reaches the smoke detector module the visibility of the
+                                infrared sensors get obstructed.  
+                                 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         
+    </section>
+    <div class="buttons">
+        <a href="index.html">Home</a>
+        <a href="Educationdetails.html">Education</a>
+    </div>
+</body>
+</html>
